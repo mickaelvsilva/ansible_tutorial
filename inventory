@@ -1,2 +1,5 @@
-mvsilva@192.168.1.4
-mvsilva@192.168.1.189
+[web_servers]
+mvsilva@192.168.185.4
+
+[db_servers]
+mvsilva@192.168.185.189

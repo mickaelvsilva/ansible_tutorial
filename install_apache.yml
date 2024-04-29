@@ -1,19 +1,16 @@
 ---
+#Playbook to install apache only on the servers that are ubuntu distribution
+#(consolidated version)
 
 - hosts: all
   become: true
   tasks:
 
-  - name: update repository index
+  - name: install apache2 and php support packages
     apt:
+      name:
+        - apache2
+        - libapache2-mod-php
+      state: latest
       update_cache: yes
-
-  - name: install apache2 package
-    apt:
-      name: apache2
-      state: latest
-
-  - name: add php support for apache
-    apt:
-      name: libapache2-mod-php
-      state: latest
+    when: ansible_distribution == "Ubuntu"
