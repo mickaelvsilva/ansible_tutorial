@@ -1,0 +1,9 @@
+# This is a task book. 
+# It is the same that a playbook, but only with the tasks.
+# Here, we don't need to put the hosts
+
+- name: add ssh key for simone user
+  authorized_key:
+    user: simone
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIHA+w6ovfTVQnTA3hrNdlLUtBoqlpT6KHagdPZMc/8W ansible"
+
