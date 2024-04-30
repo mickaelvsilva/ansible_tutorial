@@ -1,8 +1,8 @@
 [web_servers]
-mvsilva@192.168.185.4
+mvsilva@192.168.1.83
 
 [db_servers]
-mvsilva@192.168.185.189
+mvsilva@192.168.1.85
 
 [workstations]
-vmmvsilva@192.168.185.17
+vmmvsilva@192.168.1.86
